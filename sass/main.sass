@@ -1,0 +1,340 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	color: #F0F2F5
+	background-color: #000
+
+header
+	.site-header
+		// opacity: 0.3
+		background-color: rgba(#251810, 0.4)
+		min-height: 700px
+		height: 100vh
+		// opacity: 0.9
+		.top-line
+			padding-top: 40px
+			position: absolute
+			width: 100%
+		// z-index: 1
+
+.h1, .h2, .h3, .h4, .h5, .h6
+	line-height: 1.4			//отнемаем от основного 1.75-3.5 правила хорошего тона
+	text-transform: uppercase 
+
+
+
+.text-center
+	text-align: center
+	
+
+
+.logo
+	font-family: rochester, sans-serif
+	font-size: 76px
+	height: auto
+	color: #000
+	margin-left: 130vh
+	&:hover
+		text-decoration: none
+		// color: #000
+		text-shadow: 0px 0px 32px #B4D2E3
+	
+
+
+.phone
+	position: absolute
+	right: 90px
+	top: 10px
+	font-family: firasans, sans-serif
+	font-size: 22px
+	color: #BAD2EA
+	white-space: nowrap //что бы не переносился на другую строку
+	.fa
+		color: #493F3F
+		margin-right: 4px
+		font-size: 22px
+
+.phone-1
+	position: absolute
+	right: 97px
+	top: 35px
+	font-family: firasans, sans-serif
+	font-size: 22px
+	color: #BAD2EA
+	white-space: nowrap //что бы не переносился на другую строку
+	.fa
+		color: #493F3F
+		margin-right: 4px
+		font-size: 22px
+
+header
+	position: relative
+	background-size: cover	
+	background-position: center
+
+
+
+.header-composition
+	text-align: center
+	position: relative
+	margin-top: 35px
+	p
+		margin-top: 95px
+		margin-bottom: 60px
+		background-color: rgba(#251810, 0.8)
+		border-radius: 1vh
+
+.welcom
+	p
+		font-size: 20px
+		text-transform: uppercase
+		display: flex
+		align-items: center
+		text-shadow: 0px 0px 4px #31322E
+		font-weight: 400
+		white-space: nowrap //слова не переносит
+		margin: 0
+		margin-bottom: -10px
+		background-color: transparent
+		span
+			margin: 0 10px
+		&::before, &:after
+			content: ""
+			height: 1px
+			width: 100%
+			position: relative
+			background-color: #fff
+			display: inline-block
+	.h1
+		font-weight: 200
+		font-size: 68px
+		margin: 0
+		line-height: 1.6
+		border-bottom: 1px solid #fff
+		white-space: nowrap
+		text-shadow: 0px 0px 7px #31322E
+		font-weight: 200
+
+
+.soc
+	margin: auto
+	ul, li
+		margin: 0
+		padding: 0
+		list-style-type: none
+	a
+		color: #2c2c2c
+		font-size: 17px
+		display: block
+		background-color: rgba(#fff, .2)
+		height: 38px
+		width: 38px
+		text-align: center
+		margin: 18px 0
+		line-height: 38px
+		border-radius: 10em
+		transition: background-color .25s ease
+		&:hover
+			background-color: rgba(#fff, .4)
+		
+
+
+
+.portfolio
+	position: relative
+	background-color: #31322E
+
+	.h2
+		color: #A9C3DD
+		margin-left: 54px
+	.servis-list
+		list-style-type: none
+		li
+			margin-left: 0px
+
+		.fa 
+			color: #597DA3
+			margin-right: 7px
+
+// carousel.....
+
+
+.carousel-item
+	margin: 10px
+	
+	
+.owl-carousel
+	.item
+		margin-top: 5px
+
+
+//footer.............
+
+.main-footer
+	background-color: #242424
+	padding: 3% 0
+	color: #fff
+	font-size: 14px
+	p
+		color: #B6B2A1
+		margin-top: 4px
+
+.footer-column
+	margin: 15px 0			// это важно !!!! для мобил)
+	
+
+	.logo-2
+		font-family: signpainter, sans-serif
+		font-size: 38px
+		height: auto
+		color: #337AB7
+		margin-top: -14px
+		&:hover
+			text-decoration: none
+			color: #CF8A59
+			text-shadow: 0px 0px 13px #B4D2E3
+            
+	
+
+.social-footer
+	margin-top: 15px
+	.soc
+		li
+			display: inline-block
+			margin: -12px 3px 3px 3px
+			a
+				color: #ABABAB
+				margin-bottom: 0
+				transition: color .5s ease, background-color .5s ease
+				&:hover
+					color: rgba(#fff, .8)
+
+.footer-menu
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+
+
+			
+.phone_1
+	// position: absolute
+	right: 85px
+	top: 10px
+	font-family: firasans, sans-serif
+	font-size: 20px
+	color: #BAD2EA
+	white-space: nowrap //что бы не переносился на другую строку
+	&:hover
+		color: #fff
+	.fa
+		color: #493F3F
+		margin-right: 7px
+		font-size: 22px
+	.tel
+		font-size: 15px
+		color: #ff0f0f
+
+.phone_2
+	// position: absolute
+	right: 85px
+	top: 10px
+	font-family: firasans, sans-serif
+	font-size: 20px
+	color: #BAD2EA
+	white-space: nowrap //что бы не переносился на другую строку
+	&:hover
+		color: #fff
+	.fa
+		color: #493F3F
+		margin-right: 14px
+		font-size: 22px
+	.tel
+		font-size: 15px
+		color: #ff0f0f
+
+.phone_3
+	// position: absolute
+	right: 85px
+	top: 10px
+	font-family: firasans, sans-serif
+	font-size: 20px
+	color: #BAD2EA
+	white-space: nowrap //что бы не переносился на другую строку
+	&:hover
+		color: #fff
+	.fa
+		color: #493F3F
+		margin-right: 14px
+		font-size: 22px
+	.tel
+		font-size: 15px
+		color: #ff0f0f
+
+
+
+.footer-addr
+	position: relative
+	font-size: 15px
+	padding-left: 24px
+	margin: 0 0 20px
+	transition: opacity .5s ease
+	&:hover
+		color: #fff
+		// opacity: .5
+	.fa
+		position: absolute
+		left: 0
+		top: 5px
+		font-size: 18px
+		// color: #555
+
+.map
+	min-height: 200px
+	opacity: .7
+	transition: opacity .5s ease
+	&:hover
+		opacity: 1
+
+
+.marquee
+	color: #B4D2E3
+	font-family: signpainter, sans-serif
+	font-size: 40px
+
+
+
+
+
+
+@import "media" // Всегда в конце
+	
